@@ -1,0 +1,15 @@
+﻿using Assignment.Domain.Product;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Assignment.Data.Repository.Interface
+{
+    public interface IProductRepository
+    {
+        List<Product> GetProducts();
+        List<Product> GetProductsByColor(string color);
+    }
+}
